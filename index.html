@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Змейка с Автопилотом</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>🐍 Змейка с Автопилотом 🐍</h1>
+        <div class="canvas-container">
+            <canvas id="gameCanvas" width="500" height="500"></canvas>
+            <div class="overlay" id="gameOverOverlay">
+                <div class="overlay-content">
+                    <h2>Игра окончена!</h2>
+                    <p>Счёт: <span id="finalScore">0</span></p>
+                    <button id="restartButton">Играть снова</button>
+                </div>
+            </div>
+        </div>
+        <div class="game-controls">
+            <div class="score-panel">
+                <h2>Счёт: <span id="score">0</span></h2>
+                <h2>Лучший счёт: <span id="highScore">0</span></h2>
+            </div>
+            <div class="buttons">
+                <button id="startButton">Начать игру</button>
+                <button id="autopilotButton">Включить автопилот</button>
+            </div>
+            <div class="speed-control">
+                <label for="speedSlider">Скорость:</label>
+                <input type="range" id="speedSlider" min="1" max="20" value="10">
+                <span id="speedValue">10</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
